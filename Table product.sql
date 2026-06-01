@@ -1,0 +1,14 @@
+CREATE TABLE IF NOT EXISTS product (
+PRO_ID INTEGER PRIMARY KEY,
+PRO_name TEXT,
+PRO_price INTEGER,
+PRO_COM TEXT
+);
+ 
+INSERT INTO product (PRO_ID,PRO_name,PRO_price,PRO_COM) VALUES
+(0121,'Face Wash',500,'12'),
+(0144,'Soap',50,'13'),
+(0136,'Laptop',50000,'15'),
+(0167,'TV',100000,'14');
+
+SELECT*FROM product;
