@@ -1,0 +1,17 @@
+CREATE TABLE IF NOT EXISTS res (
+Name TEXT NOT NULL,
+Roll_no INTEGER PRIMARY KEY,
+Phone_no INTEGER
+);
+
+INSERT INTO res (Name,Roll_no,Phone_no) VALUES
+('Amir',31,031245678),
+('Amar',32,0300459672),
+('Ahsan',11,034422156),
+('Ali',45,03126578990),
+('Ahmed',36,0365784932);
+
+SELECT FROM res;
+SELECT*FROM res WHERE Name='Amir' AND Phone_no=031245678;
+SELECT*FROM res WHERE Name='Ali' AND Phone_no=03126578990;
+SELECT*FROM res WHERE Name='Amar' OR Roll_no=32;
